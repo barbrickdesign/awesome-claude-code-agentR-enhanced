@@ -1,20 +1,39 @@
-# Contributing to Awesome Claude Code
+# Contributing to Awesome AI Code Agents
 
-Please take a moment to read through this docoument if you plan to submit something for recommendation.
+Please take a moment to read through this document if you plan to submit something for recommendation.
 
 > [!WARNING]
-> Due to aggressive spamming of the repository's recommendation system, strict measures are in place to ensure that submissions are made accoring to the requirements stated in this document. The penalties are harsh, but compliance is very easy, and any well-meaning user who reads this document is unlikely to be affected. In additiion, please note that a temporary ban is also in place for any submissions relating to OpenClaw. I hope that these incidents were the result of a few irresponsible users, and not reflective of the OpenClaw community as a whole, and I'm sure this will be removed in the near future, but it is deemed necessary as a palliative measure.
+> Due to aggressive spamming of the repository's recommendation system, strict measures are in place to ensure that submissions are made according to the requirements stated in this document. The penalties are harsh, but compliance is very easy, and any well-meaning user who reads this document is unlikely to be affected.
 
 - I am very grateful to receive recommendations from the visitors to this list. But be aware that there is no formal submission/review process at the moment. My responsibility is to share links to awesome things. One way I find out about awesome things is via the repo's issues, and I'm very grateful to everyone who shares their amazing work. But it's not the only way, and creating an issue does not represent any sort of contract.
-- Bear in mind that the point of an Awesome List is to be *selective* - I cannot recommend every single resource that is submitted.
-- Although many awesome resources are inter-operable, we especially welcome and invite recommendations of resources that focus on the unique features and functionality of Claude Code. This is not a hard requirement but it is a guideline.
+- Bear in mind that the point of an Awesome List is to be *selective* — I cannot recommend every single resource that is submitted.
+- This list covers resources for **all major LLM-powered coding tools** — Claude Code, OpenAI Codex / ChatGPT, Gemini, GitHub Copilot, Cursor, Windsurf, Cline, Aider, Continue, and more. Resources that are LLM-agnostic (work with any provider) are especially welcome.
 - I'm constantly trying to improve the way in which recommendations can be submitted, and to provide clear guidance to users who wish to share their work. Here are some of those guidelines:
-    - security is of the utmost importance. I'm unlikely to install any software unless I have high confidence that it is free of malware, spyware, adware, or bloat. If a resource involves executing a shell script, for example, it is recommended to supply clear and thorough comments explaining exactly what it does.
-    - If your library makes any network calls except to Anthropic servers; modifies shared system files; involves any form of telemetry; or requires "bypass-permissions" mode, this must be stated very clearly.
+    - Security is of the utmost importance. I'm unlikely to install any software unless I have high confidence that it is free of malware, spyware, adware, or bloat. If a resource involves executing a shell script, for example, it is recommended to supply clear and thorough comments explaining exactly what it does.
+    - If your library makes any network calls except to the intended AI provider API; modifies shared system files; involves any form of telemetry; or requires dangerous permission bypass modes, this must be stated very clearly.
     - Do not submit resources that do not comply with the licensing rights of other developers. Make sure you understand what OSS licenses require.
     - I value _focused_ resources with a clear purpose and use value. Even if you have a marketplace full of awesome plugins, you are encouraged to select one, or a small subset.
-    - Claims about what a resource does have to be evidence-based - and you should not expect me, or probably any user, to do the work of proving it themselves. If you can provide a video demonstrating the effectiveness of a skill, e.g., this is tremendously helpful. Otherwise, provide instructions for validating the claims made in the description, and make them as detailed as possible. "Install this library into your favorite project and watch the magic happen" - no. "Clone this demo repository and install the plugin; give Claude the following prompt: ..." - yes.
-    - Put a tiny bit of time and effort into your README. It's a shame that developers will put so much effort into a project and then let an agent write the README and hardly give it any thought. 
+    - Claims about what a resource does have to be evidence-based — and you should not expect me, or probably any user, to do the work of proving it themselves. Provide instructions for validating the claims made in the description, and make them as detailed as possible.
+    - Put a tiny bit of time and effort into your README.
+
+## Supported Categories
+
+Resources can be submitted under any of the following categories:
+
+| Category | Description |
+|----------|-------------|
+| **Agent Skills** | Model-controlled files/scripts enabling specialized agent tasks |
+| **Workflows & Knowledge Guides** | Tightly coupled sets of agent-native resources |
+| **Tooling** | Applications built on top of AI coding agents |
+| **Multi-LLM Tools** | Tools that work across multiple LLM providers |
+| **Prompt Engineering** | Prompt libraries, templates, and techniques for any LLM |
+| **Status Lines** | Status bar configurations for AI coding agents |
+| **Hooks** | Lifecycle hooks for AI coding agent events |
+| **Slash-Commands** | Custom command prompts for AI coding agents |
+| **CLAUDE.md Files** | Context/instruction files for Claude Code |
+| **Agent Configuration Files** | `AGENTS.md`, `.cursorrules`, Copilot instructions, and similar files for other LLMs |
+| **Alternative Clients** | Alternative UIs and front-ends for LLMs |
+| **Official Documentation** | Official docs from AI providers |
 
 ## How to Recommend a Resource
 
@@ -24,16 +43,16 @@ First, make sure you've read the above information. Second, make sure you've rea
 
 ### **[Click here to submit a new resource](https://github.com/hesreallyhim/awesome-claude-code/issues/new?template=recommend-resource.yml)**
 
-Do not open a PR. Just fill out the form. If there are any issues with the form, the bot will notify you. (A notification from the bot that your recommendation needs some changes in formatting are not related to the warning above, which mainly applies to submissions that attempt to bypass the GitHub Web UI issue form entirely. You need not worry that formatting errors alone will incur a ban.)
+Do not open a PR. Just fill out the form. If there are any issues with the form, the bot will notify you.
 
 > [!Warning]
 > It is **not** possible to submit a resource recommendation using the `gh` CLI.
 
-Although resources themselves may be partially or entirely written by a coding agent, resource recommendations must be created by human beings. 
+Although resources themselves may be partially or entirely written by a coding agent, resource recommendations must be created by human beings.
 
 ### The Recommendation Process
 
-The entire recommendation process is managed via automation - even the maintainer does not use PRs to add entries to the list. The bot is really good at it. Here's what happens when you submit a resource for recommendation:
+The entire recommendation process is managed via automation — even the maintainer does not use PRs to add entries to the list. The bot is really good at it. Here's what happens when you submit a resource for recommendation:
 
 ```mermaid
 graph TD
@@ -81,18 +100,18 @@ Or, alternatively, start a thread in the [Discussions](https://github.com/hesrea
 
 If your submission is approved, you are invited to add a badge to your project's README:
 
-[![Mentioned in Awesome Claude Code](https://awesome.re/mentioned-badge.svg)](https://github.com/hesreallyhim/awesome-claude-code)
+[![Mentioned in Awesome AI Code Agents](https://awesome.re/mentioned-badge.svg)](https://github.com/hesreallyhim/awesome-claude-code)
 
 ```markdown
-[![Mentioned in Awesome Claude Code](https://awesome.re/mentioned-badge.svg)](https://github.com/hesreallyhim/awesome-claude-code)
+[![Mentioned in Awesome AI Code Agents](https://awesome.re/mentioned-badge.svg)](https://github.com/hesreallyhim/awesome-claude-code)
 ```
 
 Or the flat version:
 
-[![Mentioned in Awesome Claude Code](https://awesome.re/mentioned-badge-flat.svg)](https://github.com/hesreallyhim/awesome-claude-code)
+[![Mentioned in Awesome AI Code Agents](https://awesome.re/mentioned-badge-flat.svg)](https://github.com/hesreallyhim/awesome-claude-code)
 
 ```markdown
-[![Mentioned in Awesome Claude Code](https://awesome.re/mentioned-badge-flat.svg)](https://github.com/hesreallyhim/awesome-claude-code)
+[![Mentioned in Awesome AI Code Agents](https://awesome.re/mentioned-badge-flat.svg)](https://github.com/hesreallyhim/awesome-claude-code)
 ```
 
 ## GitHub Repository Notifications
@@ -101,7 +120,7 @@ If your resource is on GitHub, our automated system will create a friendly notif
 
 ## Technical Details
 
-For more information about how the repository works, including the automated systems, validation processes, the "multi-list design and technical architecture, see the documents in `docs/` - in particular `README_GENERATION`.
+For more information about how the repository works, including the automated systems, validation processes, and technical architecture, see the documents in `docs/` — in particular `README_GENERATION`.
 
 ---
 

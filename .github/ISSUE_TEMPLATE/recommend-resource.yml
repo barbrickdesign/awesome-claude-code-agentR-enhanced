@@ -1,5 +1,5 @@
 name: 🚀 Recommend New Resource
-description: Recommend a new resource to be featured in Awesome Claude Code
+description: Recommend a new resource to be featured in Awesome AI Code Agents
 title: "[Resource]: WRITE THE NAME OF YOUR RESOURCE HERE"
 labels: ["resource-submission", "pending-validation"]
 
@@ -9,15 +9,16 @@ body:
       value: |
         ## Welcome! 
 
-        Thank you for recommending a resource to Awesome Claude Code! This form will guide you through the recommendation process. 
-        Please make sure that you have already reviewed the [CONTRIBUTING](https://github.com/hesreallyhim/awesome-claude-code/blob/main/docs/CONTRIBUTING.md) document as well as the [CODE_OF_CONDUCT](https://github.com/hesreallyhim/awesome-claude-code/blob/main/docs/CODE_OF_CONDUCT.md), and that you agree to abide by the terms. Be really, really sure.
+        Thank you for recommending a resource to Awesome AI Code Agents! This list covers resources for **all major LLM-powered coding tools** — Claude Code, OpenAI Codex / ChatGPT, Gemini, GitHub Copilot, Cursor, Windsurf, Cline, Aider, Continue, and more.
 
-        **WARNING: A strict spam-deterrent system has been put in place. Failure to comply with the simple requirements stated in the [CONTRIBUTING](https://github.com/hesreallyhim/awesome-claude-code/blob/main/docs/CONTRIBUTING.md) document will result in intreasingly severe penalties.**
+        Please make sure that you have already reviewed the [CONTRIBUTING](https://github.com/hesreallyhim/awesome-claude-code/blob/main/docs/CONTRIBUTING.md) document as well as the [CODE_OF_CONDUCT](https://github.com/hesreallyhim/awesome-claude-code/blob/main/docs/CODE_OF_CONDUCT.md), and that you agree to abide by the terms.
+
+        **WARNING: A strict spam-deterrent system has been put in place. Failure to comply with the simple requirements stated in the [CONTRIBUTING](https://github.com/hesreallyhim/awesome-claude-code/blob/main/docs/CONTRIBUTING.md) document will result in increasingly severe penalties.**
 
         **Resource Guidelines:**
         - Issues must be submitted by human users using the github.com UI. The system does not allow resource submissions via the `gh` CLI or other programmatic means. Doing so violates the Code of Conduct and submissions will be automatically closed.
         - Ensure that you have actually visited this repo before and reviewed the entries on the list. Recommendations must be unique from existing resources, and should be of an equally high caliber.
-        - Avoid submitting resources that violate the Claude Code Usage Policy,or the licensing rights of other independent developers.
+        - Avoid submitting resources that violate the usage policies of any AI provider or the licensing rights of other independent developers.
         - Recommendations will be closely scrutinized for security and potential risk.
         - Although most recommendations are submitted by the authors, you may submit any resource that you love.
         - The system does not allow resource submissions via the `gh` CLI.
@@ -25,28 +26,28 @@ body:
         
         **Tips and Tricks for a Speedy Review:**
         - Please provide clear installation AND uninstallation instructions for any installable resources.
-        - If your resource requires me to execute a bash script, you **must** provide me with a clearly annotated/commented version in which everything is documented clearly. I _can_ read Bash, but it hurts my eyes after a while.
-        - Short examples or demos are tremendously helpful in the review process. If I can see it in action before I think about running it, you're way ahead of the curve.
+        - If your resource requires me to execute a bash script, you **must** provide me with a clearly annotated/commented version in which everything is documented clearly.
+        - Short examples or demos are tremendously helpful in the review process.
         - If your resource requires elevated access or "--dangerously-skip-permissions", please make sure the user is aware of this(!)
-        - If your resource involves making ANY network requests except to the Anthropic API, you **must** state that here.
-        - Offering an auto-update functionality for a library may be a very nice convenience for people. (Similarly, `npx @latest`). However, this is also a known threat vector and will be viewed with caution.
-        - If you are claiming that a resource improves Claude's capacity to perform some particular action, these claims must be backed by evidence. It's your job to provide the evidence, not mine.
-        - Try to submit _focused_ resources that differentiate your project from others, not general-purpose marketplaces.
+        - If your resource involves making ANY network requests except to the intended AI provider API, you **must** state that here.
+        - Offering an auto-update functionality for a library may be a very nice convenience for people. However, this is also a known threat vector and will be viewed with caution.
+        - If you are claiming that a resource improves an LLM's capacity to perform some particular action, these claims must be backed by evidence.
+        - Try to submit _focused_ resources that differentiate your project from others.
         - Avoid submitting complex systems that require long onboarding or extensive training in a particular methodology.
 
-        **Ask Claude for a Candid Review:**
-        When I review your recommendation, I will ask my assistant Claude Code to perform a review (this is to assist me - I do not base my judgment on this review alone.) You can find the type of prompt in `.claude/commands/evaluate-repository.md`. I recommend that you run this evaluation yourself ahead of time. Also, ask yourself: "Could Opus build this in one session?"
+        **Ask an AI for a Candid Review:**
+        When I review your recommendation, I will use an AI assistant to perform a static evaluation (this is to assist me — I do not base my judgment on this review alone.) You can find the type of prompt in `.claude/commands/evaluate-repository.md`. I recommend that you run this evaluation yourself ahead of time.
 
         After submission, our automated system will validate whether your Issue is well-formed with respect to the requirements of the template, and post the results as a comment. (This is merely a formality and does not constitute a review.)
 
-        Once your recommendation has been validated, you've done your job - the project has been recommended. I do my best to review recommendations. That summarizes the extent of my obligation. If I raise any further questions about your project, it's usually because I'm interested in it, and want to understand it better. Don't make any changes solely on the basis of my feedback.
+        Once your recommendation has been validated, you've done your job — the project has been recommended. I do my best to review recommendations.
 
   - type: input
     id: display_name
     attributes:
       label: Display Name
       description: The name of the resource as it will appear in the list
-      placeholder: "e.g., My Awesome Tool, /my-command, claude-helper"
+      placeholder: "e.g., My Awesome Tool, /my-command, agent-helper"
     validations:
       required: true
 
@@ -54,16 +55,19 @@ body:
     id: category
     attributes:
       label: Category
-      description: Select the primary category for your resource (note that I'm currenlty lumping most things called "plugins" under "Agent Skills" until I figure out a better classification system).
+      description: Select the primary category for your resource.
       options:
         - Agent Skills
         - Workflows & Knowledge Guides
         - Tooling
+        - Multi-LLM Tools
+        - Prompt Engineering
         - Status Lines
         - Hooks
         - Output Styles
         - Slash-Commands
         - CLAUDE.md Files
+        - Agent Configuration Files
         - Alternative Clients
         - Official Documentation
     validations:
@@ -81,6 +85,12 @@ body:
         - "Tooling: Usage Monitors"
         - "Tooling: Orchestrators"
         - "Tooling: Config Managers"
+        - "Multi-LLM Tools: Model Routing & Gateways"
+        - "Multi-LLM Tools: Benchmarking & Evaluation"
+        - "Multi-LLM Tools: Provider-Agnostic SDKs"
+        - "Prompt Engineering: System Prompts"
+        - "Prompt Engineering: Chain-of-Thought Patterns"
+        - "Prompt Engineering: Few-Shot & Examples"
         - "Slash-Commands: Version Control & Git"
         - "Slash-Commands: Code Analysis & Testing"
         - "Slash-Commands: Context Loading & Priming"
@@ -91,6 +101,32 @@ body:
         - "CLAUDE.md Files: Language-Specific"
         - "CLAUDE.md Files: Domain-Specific"
         - "CLAUDE.md Files: Project Scaffolding & MCP"
+        - "Agent Configuration Files: OpenAI Codex / AGENTS.md"
+        - "Agent Configuration Files: Cursor"
+        - "Agent Configuration Files: GitHub Copilot"
+        - "Agent Configuration Files: Windsurf / Cline / Other"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: llm_target
+    attributes:
+      label: Target LLM / Tool
+      description: Which LLM or coding agent is this resource primarily designed for? Check all that apply.
+      options:
+        - label: Claude Code (Anthropic)
+        - label: OpenAI Codex / ChatGPT
+        - label: Gemini / Google AI
+        - label: GitHub Copilot
+        - label: Cursor
+        - label: Windsurf
+        - label: Cline
+        - label: Aider
+        - label: Continue
+        - label: Llama / Ollama
+        - label: Mistral
+        - label: Grok (xAI)
+        - label: LLM-Agnostic / Works with Any
     validations:
       required: false
 
@@ -157,7 +193,7 @@ body:
     id: description
     attributes:
       label: Description
-      description: "A brief description of your resource (1-3 sentences maximum, no emojis) - follow the list's style - be descriptive, not promotional - do not address the reader"
+      description: "A brief description of your resource (1-3 sentences maximum, no emojis) - follow the list's style - be descriptive, not promotional - do not address the reader. Mention which LLM(s) the resource targets if it is not LLM-agnostic."
       placeholder: "Describe what your resource does and its key features..."
     validations:
       required: true
@@ -171,8 +207,8 @@ body:
     id: validate_claims
     attributes:
       label: Validate Claims
-      description: "If you are submitting a complicated resource that gives Claude Code super-powers, suggest a low-friction way for me, or anyone, to prove it to themselves that what you're claiming is true. If you are submitting a plugin, skill, framework, or similar, this field is mandatory."
-      placeholder: "e.g., install this Skill and ask Claude how many times the letter 'r' appears in your codebase"
+      description: "If you are submitting a complicated resource that gives an AI coding agent super-powers, suggest a low-friction way for me, or anyone, to prove to themselves that what you're claiming is true. If you are submitting a plugin, skill, framework, or similar, this field is mandatory."
+      placeholder: "e.g., install this Skill and ask the agent how many times the letter 'r' appears in your codebase"
     validations:
       required: false
 
@@ -180,8 +216,8 @@ body:
     id: validate_claim_part_2
     attributes:
       label: Specific Task(s)
-      description: "Tell me at least one specific task I should give to Claude Code to demonstrate the value of your resource."
-      placeholder: "e.g., install this Skill and give Claude a counting task."
+      description: "Tell me at least one specific task I should give to the AI agent to demonstrate the value of your resource."
+      placeholder: "e.g., install this Skill and give the agent a counting task."
     validations:
       required: false
 
@@ -189,8 +225,8 @@ body:
     id: validate_claims_part_3
     attributes:
       label: Specific Prompt(s)
-      description: "Tell me what to say to Claude Code when I give it the task above. The more I have to figure things out for myself, the more likely it is that I will miss the unique value of your resource. So you are advised to be as specific as possible."
-      placeholder: "Ask Claude how many times the letter 'r' appears in your codebase"
+      description: "Tell me what to say to the AI agent when I give it the task above. The more I have to figure things out for myself, the more likely it is that I will miss the unique value of your resource. So you are advised to be as specific as possible."
+      placeholder: "Ask the agent how many times the letter 'r' appears in your codebase"
     validations:
       required: false
 
@@ -230,4 +266,4 @@ body:
         3. **Approval**: If approved, a PR will be automatically created with your resource
         4. **Notification**: You'll be notified when your resource is added
 
-        Thank you for contributing to Awesome Claude Code. I have 
+        Thank you for contributing to Awesome AI Code Agents.

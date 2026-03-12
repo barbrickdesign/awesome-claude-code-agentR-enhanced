@@ -41,6 +41,9 @@ FLAT_CATEGORIES = {
     "statusline": ("Status Lines", "Status", "#84cc16"),
     "docs": ("Official Documentation", "Docs", "#6366f1"),
     "clients": ("Alternative Clients", "Clients", "#f43f5e"),
+    "multi-llm": ("Multi-LLM Tools", "Multi-LLM", "#10b981"),
+    "prompts": ("Prompt Engineering", "Prompts", "#d97706"),
+    "agent-config": ("Agent Configuration Files", "Agent Config", "#7c3aed"),
 }
 
 # Sort type definitions: slug -> (display_name, badge_color, description)

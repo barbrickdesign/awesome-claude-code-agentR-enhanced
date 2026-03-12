@@ -1,5 +1,9 @@
 # Unified Category Definitions
-# This is the single source of truth for all categories in awesome-claude-code
+# This is the single source of truth for all categories in awesome-ai-agents
+#
+# The scope of this list covers Claude Code as well as other LLM-powered
+# coding agents and developer tools (ChatGPT / Codex, Gemini, Mistral,
+# GitHub Copilot, Cursor, Windsurf, Cline, Llama, Grok, and more).
 # 
 # Adding a new category requires only updating this file.
 # All scripts and templates will automatically use these definitions.
@@ -10,7 +14,7 @@ categories:
     prefix: skill
     icon: "🤖"
     description: |
-      Agent skills are model-controlled configurations (files, scripts, resources, etc.) that enable Claude Code to perform specialized tasks requiring specific knowledge or capabilities.
+      Agent skills are model-controlled configurations (files, scripts, resources, etc.) that enable AI coding agents to perform specialized tasks requiring specific knowledge or capabilities. Includes skills for Claude Code, Cursor, Cline, and other agentic coding tools.
     order: 1
     subcategories:
       - id: general
@@ -21,7 +25,7 @@ categories:
     prefix: wf
     icon: "🧠"
     description: |
-      A workflow is a tightly coupled set of Claude Code-native resources that facilitate specific projects
+      A workflow is a tightly coupled set of agent-native resources that facilitate specific projects or development patterns. Includes guides for Claude Code, OpenAI Codex, Gemini, and other LLM-powered coding workflows.
     order: 2
     subcategories:
       - id: general
@@ -34,7 +38,7 @@ categories:
     prefix: tool
     icon: "🧰"
     description: |
-      Tooling denotes applications that are built on top of Claude Code and consist of more components than slash-commands and `CLAUDE.md` files
+      Tooling denotes applications built on top of AI coding agents — encompassing more components than slash-commands and configuration files. Includes tools for Claude Code, Copilot, Cursor, and other LLM-based developer environments.
     order: 3
     subcategories:
       - id: general
@@ -47,14 +51,48 @@ categories:
         name: "Orchestrators"
       - id: config-managers
         name: "Config Managers"
-        
+
+  - id: multi-llm-tools
+    name: "Multi-LLM Tools"
+    prefix: multi
+    icon: "🌐"
+    description: |
+      Tools, frameworks, and integrations that work across multiple LLM providers — Anthropic, OpenAI, Google, Mistral, Meta, xAI, and others. Includes model-routing, provider-agnostic SDKs, benchmarking utilities, and cross-provider migration helpers.
+    order: 4
+    subcategories:
+      - id: general
+        name: "General"
+      - id: model-routing
+        name: "Model Routing & Gateways"
+      - id: benchmarking
+        name: "Benchmarking & Evaluation"
+      - id: provider-sdks
+        name: "Provider-Agnostic SDKs"
+
+  - id: prompt-engineering
+    name: "Prompt Engineering"
+    prefix: prompt
+    icon: "✏️"
+    description: |
+      Prompt libraries, templates, frameworks, and techniques for improving LLM output quality across any model. Includes system-prompt collections, chain-of-thought patterns, few-shot example libraries, and prompt-optimization tools.
+    order: 5
+    subcategories:
+      - id: general
+        name: "General"
+      - id: system-prompts
+        name: "System Prompts"
+      - id: chain-of-thought
+        name: "Chain-of-Thought Patterns"
+      - id: few-shot
+        name: "Few-Shot & Examples"
+
   - id: statusline
     name: "Status Lines"
     prefix: status
     icon: "📊"
     description: |
-      Status lines - Configurations and customizations for Claude Code's status bar functionality
-    order: 4
+      Status lines — configurations and customizations for AI coding agent status bar functionality. Primarily covers Claude Code but the patterns apply broadly.
+    order: 6
     subcategories:
       - id: general
         name: "General"
@@ -64,8 +102,8 @@ categories:
     prefix: hook
     icon: "🪝"
     description: |
-      Hooks are a powerful API for Claude Code that allows users to activate commands and run scripts at different points in Claude's agentic lifecycle.
-    order: 5
+      Hooks are a powerful API for AI coding agents that allows users to activate commands and run scripts at different points in the agent's lifecycle. Includes hooks for Claude Code and compatible tools.
+    order: 7
     subcategories:
       - id: general
         name: "General"
@@ -75,8 +113,8 @@ categories:
     prefix: cmd
     icon: "🔪"
     description: |
-      "Slash Commands are customized, carefully refined prompts that control Claude's behavior in order to perform a specific task"
-    order: 6
+      Slash Commands are customized, carefully refined prompts that control an AI coding agent's behavior in order to perform a specific task. Primarily covers Claude Code; many patterns are adaptable to other agents.
+    order: 8
     subcategories:
       - id: general
         name: "General"
@@ -100,8 +138,8 @@ categories:
     prefix: claude
     icon: "📂"
     description: |
-      `CLAUDE.md` files are files that contain important guidelines and context-specific information or instructions that help Claude Code to better understand your project and your coding standards
-    order: 7
+      `CLAUDE.md` files contain important guidelines and context-specific information that help Claude Code understand a project and its coding standards. See also the "Agent Configuration Files" category for equivalent files targeting other LLMs.
+    order: 9
     subcategories:
       - id: general
         name: "General"
@@ -112,13 +150,32 @@ categories:
       - id: project-scaffolding-mcp
         name: "Project Scaffolding & MCP"
 
+  - id: agent-config-files
+    name: "Agent Configuration Files"
+    prefix: agentcfg
+    icon: "⚙️"
+    description: |
+      Configuration files that provide context, rules, and instructions to LLM-powered coding agents other than Claude Code. Includes `AGENTS.md` (OpenAI Codex / general), `.cursorrules` and `cursor.rules` (Cursor), `.windsurfrules` (Windsurf), `.clinerules` (Cline), `.github/copilot-instructions.md` (GitHub Copilot), and equivalent files for Gemini CLI, Aider, Continue, and other tools.
+    order: 10
+    subcategories:
+      - id: general
+        name: "General"
+      - id: openai-codex
+        name: "OpenAI Codex / AGENTS.md"
+      - id: cursor
+        name: "Cursor"
+      - id: copilot
+        name: "GitHub Copilot"
+      - id: windsurf-cline
+        name: "Windsurf / Cline / Other"
+
   - id: alternative-clients
     name: "Alternative Clients"
     prefix: client
     icon: "📱"
     description: |
-      Alternative Clients are alternative UIs and front-ends for interacting with Claude Code, either on mobile or on the desktop.
-    order: 8
+      Alternative UIs and front-ends for interacting with AI coding agents and LLMs, on mobile or desktop. Covers Claude Code alternatives and clients for other providers.
+    order: 11
     subcategories:
       - id: general
         name: "General"
@@ -128,8 +185,8 @@ categories:
     prefix: doc
     icon: "🏛️"
     description: |
-      Links to some of Anthropic's terrific documentation and resources regarding Claude Code
-    order: 9
+      Links to official documentation and resources from AI providers — Anthropic (Claude Code), OpenAI (Codex/ChatGPT), Google (Gemini), Mistral, Meta (Llama), and others.
+    order: 12
     subcategories:
       - id: general
         name: "General"
