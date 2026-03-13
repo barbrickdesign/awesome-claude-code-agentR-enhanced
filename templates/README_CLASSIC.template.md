@@ -22,17 +22,17 @@
 
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) [![FREEDOM FUNDER]({{ASSET_PATH('freedom-funder-badge.svg')}})](https://bailproject.org)
 
-# Awesome Claude Code
+# Awesome AI Code Agents
 
 <!--lint enable remark-lint:awesome-badge-->
 
 <!--lint disable double-link-->
 
-This is a curated list of slash-commands, `CLAUDE.md` files, CLI tools, and other resources and guides for enhancing your [Claude Code](https://docs.anthropic.com/en/docs/claude-code) workflow, productivity, and vibes.
+This is a curated list of slash-commands, configuration files, CLI tools, and other resources and guides for enhancing your AI-powered coding workflow, productivity, and vibes. The list covers [Claude Code](https://docs.anthropic.com/en/docs/claude-code), [OpenAI Codex](https://openai.com/codex), [Gemini CLI](https://ai.google.dev/), [GitHub Copilot](https://github.com/features/copilot), [Cursor](https://cursor.sh/), [Windsurf](https://codeium.com/windsurf), [Cline](https://github.com/cline/cline), and other LLM-powered developer tools.
 
 <!--lint enable double-link-->
 
-Claude Code is a cutting-edge CLI-based coding assistant and agent released by [Anthropic](https://www.anthropic.com/) that you can access in your terminal or IDE. It is a rapidly evolving tool that offers a number of powerful capabilities, and allows for a lot of configuration, in a lot of different ways. Users are actively working out best practices and workflows. It is the hope that this repo will help the community share knowledge and understand how to get the most out of Claude Code.
+AI coding agents are rapidly evolving tools that let you work with powerful language models directly in your terminal or IDE. Users are actively working out best practices and workflows across providers. This repo aims to collect the best community-contributed resources so developers can get the most out of every LLM-powered coding tool available.
 
 {{ANNOUNCEMENTS}}
 

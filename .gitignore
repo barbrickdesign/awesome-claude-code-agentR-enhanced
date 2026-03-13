@@ -29,3 +29,7 @@ coverage.xml
 !.claude/commands/
 .claude/commands/*
 !.claude/commands/evaluate-repository.md
+!.claude/commands/auto-validate-submission.md
+!.claude/commands/multi-llm-compatibility.md
+!.claude/commands/generate-resource-report.md
+!.claude/commands/find-duplicate-resources.md

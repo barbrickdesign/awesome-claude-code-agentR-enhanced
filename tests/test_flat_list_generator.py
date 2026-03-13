@@ -157,13 +157,16 @@ class TestFlatCategories:
             "statusline",
             "docs",
             "clients",
+            "multi-llm",
+            "prompts",
+            "agent-config",
         ]
         for cat in expected:
             assert cat in FLAT_CATEGORIES, f"Missing category: {cat}"
 
     def test_category_count(self) -> None:
-        """Test we have 11 categories."""
-        assert len(FLAT_CATEGORIES) == 11
+        """Test we have the expected number of categories (including multi-LLM additions)."""
+        assert len(FLAT_CATEGORIES) == 14
 
 
 class TestFlatSortTypes:
@@ -579,6 +582,6 @@ class TestCombinationGeneration:
         assert generator is not None
 
     def test_total_combinations(self) -> None:
-        """Test that we expect 44 total combinations (11 × 4)."""
+        """Test that we expect the correct total combinations (categories × sort types)."""
         expected = len(FLAT_CATEGORIES) * len(FLAT_SORT_TYPES)
-        assert expected == 44
+        assert expected == 56  # 14 categories × 4 sort types
